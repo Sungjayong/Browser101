@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span style= "background-color: rgb(136, 1, 136);">
+    <div id = "screen"></div>
+    <div id = "outer"></div>
+    <div id = "inner"></div>
+    <div id = "clientWidth"></div>
+  </span>
+
+  <script>
+    let id;
+    function func() {
+      document.querySelector('#screen').textContent = ("window.screen: "+window.screen.width + ", " + window.screen.height);
+      document.querySelector('#outer').textContent = ("window.outer: "+window.outerWidth + ", " + window.outerHeight);
+      document.querySelector('#inner').textContent = ("window.inner: "+window.innerWidth + ", " + window.innerHeight);
+      document.querySelector('#clientWidth').textContent = ("documentElement.clientWidth: "+document.documentElement.clientWidth + ", " + document.documentElement.clientHeight);
+      id = setTimeout(func, 10);
+    }
+func();
+
+  </script>
+</body>
+</html>

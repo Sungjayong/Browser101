@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class = "special"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <script>
+    let sBox = document.querySelector(".special");
+    sBox.addEventListener('click', (e) => {
+      console.log(sBox.getBoundingClientRect());
+      console.log(`client : ${e.clientX}, ${e.clientY}`)
+      console.log(`page : ${e.pageX}, ${e.pageY}`)
+    })
+  </script>
+</body>
+</html>

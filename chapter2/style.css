@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+body {
+  /* overflow: hidden; */
+}
+div {
+  display:block;
+  height: 250px;
+  width: 250px;
+  background-color: blanchedalmond;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+.special {
+  background-color: lightsalmon;
+}

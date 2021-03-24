@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: firebrick;
+  display: inline-block;
+  color: snow;
+  font-size: 32px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

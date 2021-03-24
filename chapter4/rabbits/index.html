@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <style></style>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class = "btn" id = "name">find a rabbit 🐇</div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div> 
+    <div id = "rabbit"><img src="/rabbits/img/rabbit.png" alt=""></div> 
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+    <div><img src="/rabbits/img/carrot.png" alt=""></div>
+  </body>
+
+  <script>
+    const btn = document.querySelector("#name");
+    const rabbit = document.querySelector("#rabbit");
+    btn.addEventListener("click", function() {
+      window.scrollBy({top: rabbit.getBoundingClientRect().top - (window.screen.height/2), behavior: 'smooth'});
+      // rabbit.scrollIntoView({behavior: 'smooth', block: 'center'});
+    });
+  </script>
+</html>
